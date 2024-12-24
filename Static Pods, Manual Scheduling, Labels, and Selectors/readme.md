@@ -122,9 +122,9 @@ k get po -o wide
 mv kube-scheduler.yaml /tmp
 ls
 ```
-## Redis Example
+# Redis Example
 
-# redis.yaml:
+## redis.yaml:
 
 ```
 apiVersion: v1
