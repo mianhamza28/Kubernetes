@@ -1,6 +1,6 @@
-# Day 9/40 - Kubernetes Services Explained - ClusterIP vs NodePort vs Loadbalancer vs External ☸️
 
-
+ # ClusterIP vs NodePort vs Loadbalancer vs External 
+ 
 ### Pre-requisite for Kind cluster
 If you use a Kind cluster, you must perform the port mapping to expose the container port. Use the below config to create a new Kind cluster
 
