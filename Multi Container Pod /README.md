@@ -28,7 +28,27 @@ spec:
     args: ['until nslookup mydb.default.svc.cluster.local; do echo waiting for mydb; sleep 2; done']
 ```
 
-``` k create -f 8.yaml
-K get pods
+```
+k create -f 8.yaml
+k get pods
 k logs myapp-pod
 ```
+
+```
+k logs myapp-pod  -c  init-myservice
+```
+
+```
+k create deploy nginx-deploy --image nginx --port 80
+k get deploy 
+```
+
+
+```
+k expose  deploy nginx-deploy --name myservice   --port 80
+
+k logs myapp-pod  -c  init-myservice
+k exec -it myapp-pod -- printenv
+```
+
+
