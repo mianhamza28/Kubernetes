@@ -27,17 +27,21 @@ spec:
     command: ['sh', '-c']
     args: ['until nslookup mydb.default.svc.cluster.local; do echo waiting for mydb; sleep 2; done']
 ```
+###  Commands
 
 ```
 k create -f 8.yaml
 k get pods
 k logs myapp-pod
 ```
+###  Specific Logs 
+
 
 ```
 k logs myapp-pod  -c  init-myservice
 ```
 
+### Deploy and Expose Nginx
 ```
 k create deploy nginx-deploy --image nginx --port 80
 k get deploy 
