@@ -84,3 +84,9 @@ kubectl get replicationcontroller
 NAME       DESIRED   CURRENT   READY   AGE
 myapp-rc   5         5         5       18m
 ```
+
+**If We Delete replicationcontroller**
+
+```
+k delete replicationcontroller myapp-deployment
+```
