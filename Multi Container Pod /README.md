@@ -1,4 +1,14 @@
+## What are Multi-container Pods? 
+A Pod that contains multiple containers that need to work together and share resources. All containers in a Pod are scheduled on the same node and share the same network namespace and storage volumes.
 
+## Why Use Multi-container Pods? 🎯
+
+### 1. Resource Sharing 📦
+- Containers share the same network namespace (localhost)
+- Can communicate via localhost
+- Share the same IP address and port space
+- Share the same storage volumes
+- Co-located and co-scheduled
 
 ## Sample YAML used in the demo
 
